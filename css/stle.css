@@ -1,42 +1,42 @@
-:root{
+:root {
   --Dark-Magenta: hsl(300, 43%, 22%);
   --Soft-Pink: hsl(333, 80%, 67%);
 
   /* ### Neutral */
 
---Dark-Grayish-Magenta: hsl(303, 10%, 53%);
---Light-Grayish-Magenta: hsl(300, 24%, 96%);
---White: hsl(0, 0%, 100%);
-
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-body{
+body {
   width: 100%;
   height: 100vh;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   display: grid;
   place-content: center;
-  
-  
+  background-image: url("/images/bg-pattern-bottom-mobile.svg");
+  background-position: 100% -125px;
+  background-repeat: no-repeat;
 }
 
-.title{
-  width: 100%;
-  color: red; 
+  .title { 
+  margin-top: 44rem;
   text-align: center;
-  /* color: var(--Dark-Magenta); */
+  color: var(--Dark-Magenta);
   font-size: 25px;
   font-weight: bold;
   line-height: 25px;
 }
 
-.parragraf{
+.parragraf {
   width: 100%;
   padding: 20px;
   text-align: center;
@@ -46,25 +46,63 @@ body{
   line-height: 20px;
 }
 
-.reviews{
-  width: 100%;
-  margin: 10px 20px;  
+.reviews {
   display: flex;
   flex-direction: column;
-  align-items: center;  
-  justify-content: center;
-  background-color: var(--Light-Grayish-Magenta);
-  border-radius: 5px;
-  color: var(--Dark-Magenta);
-  font-weight: 400;
-  
-
+  align-items: center;
+  margin: 10px 20px;
+  background: var(--Light-Grayish-Magenta);
 }
-.reviews-star{
-  padding: 10px 0;
-  
+.reviews-star {
+  padding: 10px;
 }
 
-.reviews p{
+.reviews-star img {
+  margin: 0 35x;
+  width: 15px;
+}
+
+.reviews p {
+  font-size: 1.5rem;
+  font-weight: 600;
   padding-bottom: 10px;
+  color: var(--Dark-Magenta);
+}
+
+.card {
+  background: var(--Dark-Magenta);
+  margin: 20px 20px 0px 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card .card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .card-container img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.card .card-container .card-name {
+  color: var(--White);
+  font-size: 1.5rem;
+  line-height: 20px;
+}
+
+.card .card-container .card-name span {
+  color: var(--Soft-Pink);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.card .card-description{
+  padding: 20px 0;
+  color: var(--White);
+  font-size: 1.5rem;
+  line-height: 20px;
 }
